@@ -1,0 +1,90 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$primary: #AA0601;
+$secondary: #650300;
+$light: #FBF2F2;
+$text:#000000;
+$primary-light:#FFFFFF;
+
+
+
+*{  
+    box-sizing: border-box;
+}
+
+body{   
+    font-family: 'Noto Sans TC', 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.df{display: flex;}
+
+.jcsb{ 
+    justify-content: space-between;
+}
+
+.aic{   
+    align-items: center;
+}
+
+a{  
+    display: block;
+    text-decoration: none;
+}
+
+img{    
+    display: block;
+}
+
+.wrap{  
+    max-width: 1110px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header{
+    padding: 30px 88px;    
+    background-color: $primary;
+    &-logo a{
+        border: 1px solid transparent;
+    &:hover{
+        border: 1px solid $primary-light;
+    } 
+    }
+    &-menu{ 
+        text-align: center;
+    }
+    .menu-item a{ 
+        font-size: 20px;
+        line-height: 30px;
+        color: $primary-light;
+        padding: 0 32px;
+        border-bottom: 3px solid transparent;
+        &:hover{    
+            border-bottom: 3px solid $primary-light;
+        }
+    }
+}
+
+.indexBanner{   
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true);
+    height: 840px;
+    .wrap{  
+        text-align: right;
+        padding-top: 350px;
+        .seriesName{    
+            font-size: 36px;
+            line-height: 54px;
+            color: $secondary;
+        }
+        .seriesName-slogan{ 
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 96px;
+            color: $secondary;
+        }
+    }
+
+}
+
